@@ -1,0 +1,21 @@
+package com.bl.el;
+
+public class BankData {
+	public static void main(String args[])
+	{
+		BankAccount b1=new BankAccount(123455,"Karthik",0);
+		System.out.println(b1.checkBalance());
+     	b1.deposit(10000);
+		System.out.println(b1.checkBalance());
+     	System.out.println(b1.withDraw(200));
+		SavingsAccount s1=new SavingsAccount(123455,"Karthik",1000);
+		System.out.println(s1.checkBalance());
+		System.out.println(s1.addInterest());
+		CurrentAccount c1=new CurrentAccount(123455,"Karthik",10000,1000);
+		System.out.println(c1.withDraw(12000));
+		
+		
+		
+	}
+
+}
